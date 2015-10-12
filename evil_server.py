@@ -117,6 +117,11 @@ def createResponseJson(writtenBytes, sendCommand, Message=''):
     return jsonify(Result=response_dict)
 
 
+@app.route('/')
+def renderController():
+    return render_template('controller.html')
+
+
 if __name__ == '__main__':
     # パラメータの確認
     # 第一引数: シリアルポート名を指定可能。なければデフォルトを使用

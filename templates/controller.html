@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=utf-8 />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jitabata Controller v0.1</title>
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.indigo-pink.min.css">
+  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+
+<body class="mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="mdl-layout mdl-js-layout">
+    <header class="mdl-layout_header mdl-color--blue-100">
+      <div class="mdl-layout__header-row">
+        <i class="material-icons">settings_remote</i>
+        <span class="mdl-layout-title">
+          じたばた丸操船コントローラ
+        </span>
+      </div>
+    </header>
+
+    <main>
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--1-col"></div>
+        <div class="mdl-cell mdl-cell--2-col"></div>
+        <div class="mdl-cell mdl-cell--2-col"></div>
+        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--red-800">
+          速力4 機関出力最大
+        </button>
+        <div class="mdl-cell mdl-cell--2-col"></div>
+        <div class="mdl-cell mdl-cell--2-col"></div>
+      </div>
+
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--1-col"></div>
+        <div class="mdl-cell mdl-cell--2-col"></div>
+        <div class="mdl-cell mdl-cell--2-col"></div>
+        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--deep-orange-400">
+          速力3 全速
+        </button>
+        <div class="mdl-cell mdl-cell--2-col"></div>
+        <div class="mdl-cell mdl-cell--2-col"></div>
+      </div>
+
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--1-col"></div>
+        <div class="mdl-cell mdl-cell--2-col"></div>
+        <div class="mdl-cell mdl-cell--2-col"></div>
+        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--amber-700">
+          速力2 強速
+        </button>
+        <div class="mdl-cell mdl-cell--2-col"></div>
+        <div class="mdl-cell mdl-cell--2-col"></div>
+      </div>
+
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--1-col"></div>
+        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--light-green-700">
+          左旋回 全力
+        </button>
+        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--light-green-600">
+          左旋回 ゆっくり
+        </button>
+        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--green-A700" onclick="$.get('forward')">
+          速力1 原速
+        </button>
+        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--lime-600">
+          右旋回 ゆっくり
+        </button>
+        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--lime-700">
+          右旋回 全力
+        </button>
+      </div>
+
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--1-col"></div>
+        <div class="mdl-cell mdl-cell--2-col"></div>
+        <div class="mdl-cell mdl-cell--2-col"></div>
+        <button class=" mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--indigo-700" onclick="$.get('stop')">
+          速力0 停止
+        </button>
+        <div class="mdl-cell mdl-cell--2-col"></div>
+        <div class="mdl-cell mdl-cell--2-col"></div>
+      </div>
+
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--1-col"></div>
+        <div class="mdl-cell mdl-cell--2-col"></div>
+        <div class="mdl-cell mdl-cell--2-col"></div>
+        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--purple-A700" onclick="$.get('reverse')">
+          速力-1 逆進
+        </button>
+        <div class="mdl-cell mdl-cell--2-col"></div>
+        <div class="mdl-cell mdl-cell--2-col"></div>
+      </div>
+    </main>
+
+  </div>
+
+
+
+  <style>
+    .mdl-cell {
+      height: 6em;
+    }
+  </style>
+
+</body>
+
+</html>
