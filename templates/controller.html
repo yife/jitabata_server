@@ -17,7 +17,7 @@
       <div class="mdl-layout__header-row">
         <i class="material-icons">settings_remote</i>
         <span class="mdl-layout-title">
-          じたばた丸操船コントローラ
+          じたばた丸 操船コントローラ
         </span>
       </div>
     </header>
@@ -25,52 +25,76 @@
     <main>
       <div class="mdl-grid">
         <div class="mdl-cell mdl-cell--1-col"></div>
-        <div class="mdl-cell mdl-cell--2-col"></div>
-        <div class="mdl-cell mdl-cell--2-col"></div>
-        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--red-800">
-          速力4 機関出力最大
-        </button>
-        <div class="mdl-cell mdl-cell--2-col"></div>
-        <div class="mdl-cell mdl-cell--2-col"></div>
-      </div>
-
-      <div class="mdl-grid">
-        <div class="mdl-cell mdl-cell--1-col"></div>
-        <div class="mdl-cell mdl-cell--2-col"></div>
-        <div class="mdl-cell mdl-cell--2-col"></div>
-        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--deep-orange-400">
-          速力3 全速
-        </button>
-        <div class="mdl-cell mdl-cell--2-col"></div>
-        <div class="mdl-cell mdl-cell--2-col"></div>
-      </div>
-
-      <div class="mdl-grid">
-        <div class="mdl-cell mdl-cell--1-col"></div>
-        <div class="mdl-cell mdl-cell--2-col"></div>
-        <div class="mdl-cell mdl-cell--2-col"></div>
-        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--amber-700">
-          速力2 強速
-        </button>
-        <div class="mdl-cell mdl-cell--2-col"></div>
-        <div class="mdl-cell mdl-cell--2-col"></div>
-      </div>
-
-      <div class="mdl-grid">
-        <div class="mdl-cell mdl-cell--1-col"></div>
-        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--light-green-700">
+        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--deep-orange-700" onclick="$.get('set.engine?power=4&rudder=left&rudder_power=2')">
           左旋回 全力
         </button>
-        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--light-green-600">
+        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--deep-orange-600" onclick="$.get('set.engine?power=4&rudder=left&rudder_power=1')">
           左旋回 ゆっくり
         </button>
-        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--green-A700" onclick="$.get('forward')">
-          速力1 原速
+        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--red-700" onclick="$.get('set.engine?power=4&rudder=left&rudder_power=0')">
+          速力4 機関全力
         </button>
-        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--lime-600">
+        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--deep-orange-600" onclick="$.get('set.engine?power=4&rudder=right&rudder_power=1')">
           右旋回 ゆっくり
         </button>
-        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--lime-700">
+        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--deep-orange-700" onclick="$.get('set.engine?power=4&rudder=right&rudder_power=2')">
+          右旋回 全力
+        </button>
+      </div>
+
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--1-col"></div>
+        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--orange-700" onclick="$.get('set.engine?power=3&rudder=left&rudder_power=2')">
+          左旋回 全力
+        </button>
+        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--orange-600" onclick="$.get('set.engine?power=3&rudder=left&rudder_power=1')">
+          左旋回 ゆっくり
+        </button>
+        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--orange-800" onclick="$.get('set.engine?power=3&rudder=left&rudder_power=0')">
+          速力3 全速
+        </button>
+        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--orange-600" onclick="$.get('set.engine?power=3&rudder=right&rudder_power=1')">
+          右旋回 ゆっくり
+        </button>
+        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--orange-700" onclick="$.get('set.engine?power=3&rudder=right&rudder_power=2')">
+          右旋回 全力
+        </button>
+      </div>
+
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--1-col"></div>
+        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--green-700" onclick="$.get('set.engine?power=2&rudder=left&rudder_power=2')">
+          左旋回 全力
+        </button>
+        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--green-600" onclick="$.get('set.engine?power=2&rudder=left&rudder_power=1')">
+          左旋回 ゆっくり
+        </button>
+        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--green-900" onclick="$.get('set.engine?power=2&rudder=left&rudder_power=0')">
+          速力2 強速
+        </button>
+        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--green-600" onclick="$.get('set.engine?power=2&rudder=right&rudder_power=1')">
+          右旋回 ゆっくり
+        </button>
+        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--green-700" onclick="$.get('set.engine?power=2&rudder=right&rudder_power=2')">
+          右旋回 全力
+        </button>
+      </div>
+
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--1-col"></div>
+        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--blue-700" onclick="$.get('set.engine?power=1&rudder=left&rudder_power=2')">
+          左旋回 全力
+        </button>
+        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--blue-600" onclick="$.get('set.engine?power=1&rudder=left&rudder_power=1')">
+          左旋回 ゆっくり
+        </button>
+        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--blue-A700" onclick="$.get('set.engine?power=1&rudder=left&rudder_power=0')">
+          速力1 原速
+        </button>
+        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--blue-600" onclick="$.get('set.engine?power=1&rudder=right&rudder_power=1')">
+          右旋回 ゆっくり
+        </button>
+        <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--white mdl-color--blue-700" onclick="$.get('set.engine?power=1&rudder=right&rudder_power=2')">
           右旋回 全力
         </button>
       </div>
