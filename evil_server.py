@@ -102,8 +102,7 @@ def stopEngine():
 
 @app.route('/reverse')
 def reverseEngine():
-    # 停船
-    # モータの出力を0%に
+    # 逆進
     cmd = ':788001000302CD02CDFFFFFFFF6A'
     msg = 'reverse'
     return executeCommand(cmd, msg)
